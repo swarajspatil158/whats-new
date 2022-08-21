@@ -25,8 +25,10 @@ const showTime = [];
 let how = 3;
 while (how > 0) {
   const heroTime = Math.floor(Math.random() * actions.length);
-  showTime.push(actions[heroTime]);
-  how--;
+  if (!showTime.includes(actions[heroTime])) {
+    showTime.push(actions[heroTime]);
+    how--;
+  }
 }
 console.log(showTime);
 const root = document.getElementById("root");
