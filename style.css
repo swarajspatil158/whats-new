@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 #root .task {
@@ -51,20 +51,37 @@
   background-color: rgb(231, 231, 2);
   padding: 1rem 2rem;
   margin: 2rem;
-
+  cursor: pointer;
   text-align: end;
   font-weight: bold;
-  font-style: normal;
-  font-size: 1rem;
+  font-style: italic;
+
+  font-size: 1.5rem;
+  color: rgb(114, 114, 57);
   border: none;
   border-radius: 10px;
-
-  cursor: pointer;
-
-  transition: 0.2s;
 }
-.btn:hover {
-  font-size: 1.5rem;
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.btn span:after {
+  content: "\00bb";
+  opacity: 0;
+  top: 0;
+  right: -2px;
+  transition: 0.3s;
+}
+.btn:hover span {
+  padding-right: 10px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 footer {
   display: flex;
@@ -82,8 +99,6 @@ footer {
   justify-content: space-between;
   font-size: 0.5rem;
   margin: 1rem 1rem;
-
-  /* color: aliceblue; */
   font-family: "Aboreto", cursive;
 }
 #change {
