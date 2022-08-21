@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 #root .task {
@@ -50,13 +50,13 @@
 .btn {
   background-color: rgb(231, 231, 2);
   padding: 1rem 2rem;
-  margin: 2rem;
+  margin: 1rem;
   cursor: pointer;
   text-align: end;
   font-weight: bold;
   font-style: italic;
 
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgb(114, 114, 57);
   border: none;
   border-radius: 10px;
