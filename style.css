@@ -48,9 +48,9 @@
 }
 
 .btn {
-  background-color: rgb(231, 231, 2);
-  padding: 1rem 2rem;
-  margin: 1rem;
+  background-color: rgba(231, 231, 2, 0.9);
+  padding: 0.5rem 1rem;
+  margin: 3rem;
   cursor: pointer;
   text-align: end;
   font-weight: bold;
@@ -59,7 +59,7 @@
   font-size: 1rem;
   color: rgb(114, 114, 57);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .btn span {
