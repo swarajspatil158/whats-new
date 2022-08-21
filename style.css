@@ -92,3 +92,24 @@ footer {
   font-weight: bold;
   font-size: 1rem;
 }
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.github {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  color: rgb(95, 124, 95);
+  border-radius: 70%;
+  transition: 0.1s;
+}
+.github:hover {
+  font-size: 1.2rem;
+  color: skyblue;
+  cursor: pointer;
+}
